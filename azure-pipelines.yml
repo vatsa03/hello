@@ -19,7 +19,7 @@ steps:
 - script: echo Hello, world,yo! 
   displayName: 'Run a one-line script'
   
-- script: echo yo yo ma!
+- script: echo yo yo ma! > pipe.txt
   workingDirectory: C:\Users\kvatsa\Desktop
 
 - script: |
