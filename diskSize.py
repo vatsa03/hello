@@ -6,5 +6,5 @@ sz= sz[-6]
 sz= sz.split(" ")
 sz= int(sz[1])
 sz= sz/(1e+6)
-print(sz)
+print("available disk size "sz)
 
