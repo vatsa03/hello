@@ -16,7 +16,7 @@ pool:
   
   
 steps:
-- script: python hello.py
+- script: python hello.py > p.txt
   workingDirectory: C:\Users\kvatsa\Desktop\git_hub
   
 - script: echo Hello, world,yo! 
