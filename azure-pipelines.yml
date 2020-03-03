@@ -16,11 +16,12 @@ pool:
   
   
 steps:
+- script: python hello.py
+  workingDirectory: C:\Users\kvatsa\Desktop\git_hub
+  
 - script: echo Hello, world,yo! 
   displayName: 'Run a one-line script'
-  
-- script: echo yo yo ma! > C:\Users\kvatsa\Desktop\pipe.txt
-  workingDirectory: C:\Users\kvatsa\Desktop
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
