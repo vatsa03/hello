@@ -9,7 +9,7 @@ trigger:
 pool:
   name: Default
   demands:
-    - [kush_sys]-[testPurpose] -equals True
+    - kush-dev -equals True
 
 steps:
 - script: echo Hello, world,yo!
