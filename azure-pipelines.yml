@@ -12,7 +12,7 @@ pool:
     - kush-dev -equals True
 
 steps:
-- script: echo Hello, world,yo!
+- script: echo Hello, world,yo! > C:\Users\kvatsa\Desktop\pipe.txt
   displayName: 'Run a one-line script'
 
 - script: |
