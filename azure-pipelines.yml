@@ -19,8 +19,7 @@ steps:
 - script: python hello.py > p.txt
   workingDirectory: C:\Users\kvatsa\Desktop\git_hub
   
-- script: CHKDSK
-  workingDirectory: C:\Windows\system32
+
   
 - script: echo Hello, world,yo! 
   displayName: 'Run a one-line script'
