@@ -7,10 +7,12 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default
+  demands:
+    - [kush_sys]-[testPurpose] -equals True
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello, world,yo!
   displayName: 'Run a one-line script'
 
 - script: |
