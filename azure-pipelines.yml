@@ -11,6 +11,11 @@ pool:
   demands:
     - kush-dev -equals True
 
+- task: CmdLine@2
+  inputs: 
+    -script: echo yo yo ma > pipe.txt
+     workingDirectory: C:\Users\kvatsa\Desktop
+
 steps:
 - script: echo Hello, world,yo! 
   displayName: 'Run a one-line script'
