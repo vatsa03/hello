@@ -20,7 +20,7 @@ steps:
   displayName: 'Run a one-line script'
   
 - script: echo yo yo ma!
-  working Directory: C:\Users\kvatsa\Desktop
+  workingDirectory: C:\Users\kvatsa\Desktop
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
