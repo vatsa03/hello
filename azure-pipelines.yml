@@ -11,14 +11,15 @@ pool:
   demands:
     - kush-dev -equals True
 
--script: echo yo yo ma!
-  working Directory: C:\Users\kvatsa\Desktop
+
   
   
   
 steps:
 - script: echo Hello, world,yo! 
   displayName: 'Run a one-line script'
+-script: echo yo yo ma!
+  working Directory: C:\Users\kvatsa\Desktop
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
