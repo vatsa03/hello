@@ -25,6 +25,7 @@ jobs:
     steps:
     - script: python diskSize.py
       displayName: cmd_task
+      workingDirectory: C:\Users\kvatsa\Desktop\git_hub\hello
    
   - job: Windows_vm
     pool:
@@ -34,6 +35,7 @@ jobs:
     steps:
     - script: python diskSize.py
       displayName: cmd_task
+      workingDirectory: C:\Users\kushagra\Desktop\git_hub\hello
   
 
   
