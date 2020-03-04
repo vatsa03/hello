@@ -10,12 +10,13 @@ pool:
   name: Default
   demands:
     - kush-dev -equals True
-    - kush-vm -equals True
+    
+pool:
+  name: Default
+  demands:
+    - - kush-vm -equals True
 
 
-  
-  
-  
 steps:
   
 - script: python diskSize.py 
