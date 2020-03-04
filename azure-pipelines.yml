@@ -23,8 +23,8 @@ jobs:
       demands: 
         - kush-dev -equals True
       steps:
-      - script: echo hello from kush-dev
-        displayName: cmd_task
+    - script: echo hello from kush-dev
+      displayName: cmd_task
   
 
   
