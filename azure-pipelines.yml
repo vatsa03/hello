@@ -24,13 +24,7 @@ jobs:
        - kush-dev -equals True
      steps:
      - script: echo hello from kush-dev
-  -job: Windows vm
-   pool:
-    name: Default
-    demands:
-      - kush-vm -equals True
-    steps:
-    - script: echo hello from kush-vm
+  
 
   
 #- script: echo Hello, world,yo! 
