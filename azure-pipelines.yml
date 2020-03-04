@@ -6,28 +6,38 @@
 trigger:
 - master
 
-pool:
-  name: Default
-  demands:
-    - kush-dev -equals True
+#pool:
+#  name: Default
+#  demands:
+#    - kush-dev -equals True
     
-pool:
-  name: Default
-  demands:
-    - kush-vm -equals True
-
-
-steps:
+#steps:
   
-- script: python diskSize.py 
-  workingDirectory: C:\Users\kvatsa\Desktop\git_hub\hello
+#- script: python diskSize.py 
+#  workingDirectory: C:\Users\kvatsa\Desktop\git_hub\hello
+
+jobs:
+  -job: Windows
+   pool: 
+     name: Default
+     demands: 
+       - kush-dev -equals True
+     steps:
+     - script: echo hello from kush-dev
+  -job: Windows vm
+   pool:
+    name: Default
+    demands:
+      - kush-vm -equals True
+    steps:
+    - script: echo hello from kush-vm
 
   
-- script: echo Hello, world,yo! 
-  displayName: 'Run a one-line script'
+#- script: echo Hello, world,yo! 
+#  displayName: 'Run a one-line script'
 
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+#- script: |
+#    echo Add other tasks to build, test, and deploy your project.
+#    echo See https://aka.ms/yaml
+#  displayName: 'Run a multi-line script'
