@@ -26,7 +26,7 @@ jobs:
     - script: echo hello from kush-dev
       displayName: cmd_task
    
-  - job: Windows vm
+  - job: Windows_vm
     pool:
       name: Default
       demands:
