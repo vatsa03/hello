@@ -14,7 +14,7 @@ pool:
 pool:
   name: Default
   demands:
-    - - kush-vm -equals True
+    - kush-vm -equals True
 
 
 steps:
