@@ -23,7 +23,7 @@ jobs:
       demands: 
         - kush-dev -equals True
     steps:
-    - script: echo hello from kush-dev
+    - script: python diskSize.py
       displayName: cmd_task
    
   - job: Windows_vm
@@ -32,7 +32,8 @@ jobs:
       demands:
         - kush-vm -equals True
     steps:
-    - script: echo hello from kush-vm
+    - script: python diskSize.py
+      displayName: cmd_task
   
 
   
