@@ -6,15 +6,12 @@
 trigger:
 - master
 
-#pool:
-#  name: Default
-#  demands:
-#    - kush-dev -equals True
-    
-#steps:
-  
-#- script: python diskSize.py 
-#  workingDirectory: C:\Users\kvatsa\Desktop\git_hub\hello
+schedules:
+- cron: */5 * * * *
+  displayName: every 5 min build
+  branches: 
+    include:
+    - master
 
 jobs:
   - job: Windows
@@ -37,14 +34,4 @@ jobs:
       displayName: cmd_task
       workingDirectory: C:\Users\kushagra\Desktop\git_hub\hello
       
-  
 
-  
-#- script: echo Hello, world,yo! 
-#  displayName: 'Run a one-line script'
-
-
-#- script: |
-#    echo Add other tasks to build, test, and deploy your project.
-#    echo See https://aka.ms/yaml
-#  displayName: 'Run a multi-line script'
