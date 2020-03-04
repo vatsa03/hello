@@ -35,7 +35,7 @@ jobs:
     steps:
     - script: echo kush
       displayName: cmd_task
-      workingDirectory: C:\Users\kushagra\Desktop\git_hub\hello
+      
   
 
   
