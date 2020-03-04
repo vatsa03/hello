@@ -24,6 +24,7 @@ jobs:
         - kush-dev -equals True
       steps:
       - script: echo hello from kush-dev
+        displayName: cmd_task
   
 
   
