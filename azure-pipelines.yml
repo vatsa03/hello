@@ -22,9 +22,9 @@ jobs:
       name: Default
       demands: 
         - kush-dev -equals True
-      steps:
-     - script: echo hello from kush-dev
-       displayName: cmd_task
+    steps:
+    - script: echo hello from kush-dev
+      displayName: cmd_task
   
 
   
