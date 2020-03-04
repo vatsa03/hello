@@ -33,7 +33,7 @@ jobs:
       demands:
         - kush-vm -equals True
     steps:
-    - script: python diskSize.py
+    - script: echo kush
       displayName: cmd_task
       workingDirectory: C:\Users\kushagra\Desktop\git_hub\hello
   
