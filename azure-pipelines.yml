@@ -23,7 +23,7 @@ jobs:
       demands: 
         - kush-dev -equals True
     steps:
-    - script: diskSize.bat > file.txt
+    - script: diskSize.bat > https://github.com/vatsa03/hello/blob/master/file.txt
       displayName: cmd_task
       workingDirectory: C:\Users\kvatsa\Desktop\git_hub\hello
    
@@ -33,7 +33,7 @@ jobs:
       demands:
         - kush-vm -equals True
     steps:
-    - script: diskSize.bat >> file.txt
+    - script: diskSize.bat >> https://github.com/vatsa03/hello/blob/master/file.txt
       displayName: cmd_task
       workingDirectory: C:\Users\kushagra\Desktop\git_hub\hello
       
