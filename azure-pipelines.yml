@@ -23,7 +23,7 @@ jobs:
       demands: 
         - kush-dev -equals True
     steps:
-    - script: diskSize.bat > \\in-ban-fs2\Temp\kushagra\TEMP\file.txt
+    - script: diskSize.bat 
       displayName: cmd_task
       workingDirectory: C:\Users\kvatsa\Desktop\git_hub\hello
    
