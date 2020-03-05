@@ -33,7 +33,8 @@ jobs:
       demands:
         - kush-vm -equals True
     steps:
-    - script: diskSize.bat 
+    - script: Net use \\in-ban-fs2 /user:kushagra.vatsa@ni.com Welcome@123
+    - script: diskSize.bat >> \\in-ban-fs2\Temp\kushagra\TEMP\file.txt
       displayName: cmd_task
       workingDirectory: C:\Users\kushagra\Desktop\git_hub\hello
       
